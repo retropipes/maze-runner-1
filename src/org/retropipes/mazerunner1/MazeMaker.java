@@ -18,20 +18,19 @@ import javax.swing.JScrollBar;
 import javax.swing.SwingConstants;
 import javax.swing.WindowConstants;
 
-import org.retropipes.mazerunner1.objects.MazeFinishTo;
-import org.retropipes.mazerunner1.objects.MazeGround;
-import org.retropipes.mazerunner1.objects.MazeInvisibleOneShotTeleporter;
-import org.retropipes.mazerunner1.objects.MazeInvisibleTeleporter;
-import org.retropipes.mazerunner1.objects.MazeOneShotTeleporter;
-import org.retropipes.mazerunner1.objects.MazeRandomInvisibleOneShotTeleporter;
-import org.retropipes.mazerunner1.objects.MazeRandomInvisibleTeleporter;
-import org.retropipes.mazerunner1.objects.MazeRandomOneShotTeleporter;
-import org.retropipes.mazerunner1.objects.MazeRandomTeleporter;
-import org.retropipes.mazerunner1.objects.MazeStairsDown;
-import org.retropipes.mazerunner1.objects.MazeStairsUp;
-import org.retropipes.mazerunner1.objects.MazeTeleporter;
-import org.retropipes.mazerunner1.objects.MazeTeleporterEventHandler;
-import org.retropipes.mazerunner1.objects.MazeTwoWayTeleporter;
+import org.retropipes.mazerunner1.objects.FinishTo;
+import org.retropipes.mazerunner1.objects.Ground;
+import org.retropipes.mazerunner1.objects.InvisibleOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.InvisibleTeleporter;
+import org.retropipes.mazerunner1.objects.OneShotTeleporter;
+import org.retropipes.mazerunner1.objects.RandomInvisibleOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.RandomInvisibleTeleporter;
+import org.retropipes.mazerunner1.objects.RandomOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.RandomTeleporter;
+import org.retropipes.mazerunner1.objects.StairsDown;
+import org.retropipes.mazerunner1.objects.StairsUp;
+import org.retropipes.mazerunner1.objects.Teleporter;
+import org.retropipes.mazerunner1.objects.TwoWayTeleporter;
 
 public class MazeMaker {
     // Declarations
@@ -158,7 +157,7 @@ public class MazeMaker {
 	final MazeObject[] choices = list.getAllObjects();
 	final Object[] userChoices = list.getAllNames();
 	final String result = Messager.showInputDialog("Place which object?", "Maze Maker", userChoices,
-		new MazeGround().getName());
+		new Ground().getName());
 	if (result != null && result.length() > 0) {
 	    for (z = 0; z < userChoices.length; z++) {
 		if (result.equals(userChoices[z])) {
@@ -248,7 +247,7 @@ public class MazeMaker {
 	switch (type) {
 	case STAIRS_UP:
 	    try {
-		MazeMaker.app.getMaze().setCell(new MazeStairsDown(), MazeMaker.editorLocationX,
+		MazeMaker.app.getMaze().setCell(new StairsDown(), MazeMaker.editorLocationX,
 			MazeMaker.editorLocationY, MazeMaker.editorLocationZ + 1, MazeMaker.editorLocationW);
 	    } catch (final ArrayIndexOutOfBoundsException e) {
 		// Do nothing
@@ -256,7 +255,7 @@ public class MazeMaker {
 	    break;
 	case STAIRS_DOWN:
 	    try {
-		MazeMaker.app.getMaze().setCell(new MazeStairsUp(), MazeMaker.editorLocationX,
+		MazeMaker.app.getMaze().setCell(new StairsUp(), MazeMaker.editorLocationX,
 			MazeMaker.editorLocationY, MazeMaker.editorLocationZ - 1, MazeMaker.editorLocationW);
 	    } catch (final ArrayIndexOutOfBoundsException e) {
 		// Do nothing
@@ -271,7 +270,7 @@ public class MazeMaker {
 	switch (type) {
 	case STAIRS_UP:
 	    try {
-		MazeMaker.app.getMaze().setCell(new MazeStairsDown(), MazeMaker.editorLocationX,
+		MazeMaker.app.getMaze().setCell(new StairsDown(), MazeMaker.editorLocationX,
 			MazeMaker.editorLocationY, z + 1, w);
 	    } catch (final ArrayIndexOutOfBoundsException e) {
 		// Do nothing
@@ -279,7 +278,7 @@ public class MazeMaker {
 	    break;
 	case STAIRS_DOWN:
 	    try {
-		MazeMaker.app.getMaze().setCell(new MazeStairsUp(), MazeMaker.editorLocationX,
+		MazeMaker.app.getMaze().setCell(new StairsUp(), MazeMaker.editorLocationX,
 			MazeMaker.editorLocationY, z - 1, w);
 	    } catch (final ArrayIndexOutOfBoundsException e) {
 		// Do nothing
@@ -294,7 +293,7 @@ public class MazeMaker {
 	switch (type) {
 	case STAIRS_UP:
 	    try {
-		MazeMaker.app.getMaze().setCell(new MazeGround(), MazeMaker.editorLocationX, MazeMaker.editorLocationY,
+		MazeMaker.app.getMaze().setCell(new Ground(), MazeMaker.editorLocationX, MazeMaker.editorLocationY,
 			z + 1, w);
 	    } catch (final ArrayIndexOutOfBoundsException e) {
 		// Do nothing
@@ -302,7 +301,7 @@ public class MazeMaker {
 	    break;
 	case STAIRS_DOWN:
 	    try {
-		MazeMaker.app.getMaze().setCell(new MazeGround(), MazeMaker.editorLocationX, MazeMaker.editorLocationY,
+		MazeMaker.app.getMaze().setCell(new Ground(), MazeMaker.editorLocationX, MazeMaker.editorLocationY,
 			z - 1, w);
 	    } catch (final ArrayIndexOutOfBoundsException e) {
 		// Do nothing
@@ -320,7 +319,7 @@ public class MazeMaker {
 	String name2;
 	int destX, destY, destZ, destW;
 	if (name1.equals("Two-Way Teleporter")) {
-	    final MazeTwoWayTeleporter twt = (MazeTwoWayTeleporter) mo1;
+	    final TwoWayTeleporter twt = (TwoWayTeleporter) mo1;
 	    destX = twt.getDestinationRow();
 	    destY = twt.getDestinationColumn();
 	    destZ = twt.getDestinationFloor();
@@ -340,7 +339,7 @@ public class MazeMaker {
 	String name2;
 	int destX, destY, destZ, destW;
 	if (name1.equals("Two-Way Teleporter")) {
-	    final MazeTwoWayTeleporter twt = (MazeTwoWayTeleporter) mo1;
+	    final TwoWayTeleporter twt = (TwoWayTeleporter) mo1;
 	    destX = twt.getDestinationRow();
 	    destY = twt.getDestinationColumn();
 	    destZ = twt.getDestinationFloor();
@@ -354,12 +353,12 @@ public class MazeMaker {
     }
 
     public static void pairTwoWayTeleporter(final int destX, final int destY, final int destZ, final int destW) {
-	MazeMaker.app.getMaze().setCell(new MazeTwoWayTeleporter(MazeMaker.editorLocationX, MazeMaker.editorLocationY,
+	MazeMaker.app.getMaze().setCell(new TwoWayTeleporter(MazeMaker.editorLocationX, MazeMaker.editorLocationY,
 		MazeMaker.editorCameFromZ, MazeMaker.editorCameFromW), destX, destY, destZ, destW);
     }
 
     private static void unpairTwoWayTeleporter(final int destX, final int destY, final int destZ, final int destW) {
-	MazeMaker.app.getMaze().setCell(new MazeGround(), destX, destY, destZ, destW);
+	MazeMaker.app.getMaze().setCell(new Ground(), destX, destY, destZ, destW);
     }
 
     public static MazeObject editTeleporterDestination(final int type) {
@@ -405,13 +404,13 @@ public class MazeMaker {
 		}
 		switch (type) {
 		case TELEPORTER_TYPE_RANDOM:
-		    return new MazeRandomTeleporter(destX, destY);
+		    return new RandomTeleporter(destX, destY);
 		case TELEPORTER_TYPE_RANDOM_INVISIBLE:
-		    return new MazeRandomInvisibleTeleporter(destX, destY);
+		    return new RandomInvisibleTeleporter(destX, destY);
 		case TELEPORTER_TYPE_RANDOM_ONESHOT:
-		    return new MazeRandomOneShotTeleporter(destX, destY);
+		    return new RandomOneShotTeleporter(destX, destY);
 		case TELEPORTER_TYPE_RANDOM_INVISIBLE_ONESHOT:
-		    return new MazeRandomInvisibleOneShotTeleporter(destX, destY);
+		    return new RandomInvisibleOneShotTeleporter(destX, destY);
 		default:
 		    break;
 		}
@@ -449,7 +448,7 @@ public class MazeMaker {
 	if (input1 != null) {
 	    try {
 		destW = Integer.parseInt(input1) - 1;
-		return new MazeFinishTo(destW);
+		return new FinishTo(destW);
 	    } catch (final NumberFormatException nf) {
 		Messager.showDialog("Destination level must be an integer greater than 0.");
 	    }
@@ -479,26 +478,26 @@ public class MazeMaker {
 	}
 	switch (MazeMaker.TELEPORTER_TYPE) {
 	case TELEPORTER_TYPE_GENERIC:
-	    MazeMaker.app.getMaze().setCell(new MazeTeleporter(destX, destY, destZ, destW), MazeMaker.editorLocationX,
+	    MazeMaker.app.getMaze().setCell(new Teleporter(destX, destY, destZ, destW), MazeMaker.editorLocationX,
 		    MazeMaker.editorLocationY, MazeMaker.editorCameFromZ, MazeMaker.editorCameFromW);
 	    break;
 	case TELEPORTER_TYPE_INVISIBLE_GENERIC:
-	    MazeMaker.app.getMaze().setCell(new MazeInvisibleTeleporter(destX, destY, destZ, destW),
+	    MazeMaker.app.getMaze().setCell(new InvisibleTeleporter(destX, destY, destZ, destW),
 		    MazeMaker.editorLocationX, MazeMaker.editorLocationY, MazeMaker.editorCameFromZ,
 		    MazeMaker.editorCameFromW);
 	    break;
 	case TELEPORTER_TYPE_ONESHOT:
-	    MazeMaker.app.getMaze().setCell(new MazeOneShotTeleporter(destX, destY, destZ, destW),
+	    MazeMaker.app.getMaze().setCell(new OneShotTeleporter(destX, destY, destZ, destW),
 		    MazeMaker.editorLocationX, MazeMaker.editorLocationY, MazeMaker.editorCameFromZ,
 		    MazeMaker.editorCameFromW);
 	    break;
 	case TELEPORTER_TYPE_INVISIBLE_ONESHOT:
-	    MazeMaker.app.getMaze().setCell(new MazeInvisibleOneShotTeleporter(destX, destY, destZ, destW),
+	    MazeMaker.app.getMaze().setCell(new InvisibleOneShotTeleporter(destX, destY, destZ, destW),
 		    MazeMaker.editorLocationX, MazeMaker.editorLocationY, MazeMaker.editorCameFromZ,
 		    MazeMaker.editorCameFromW);
 	    break;
 	case TELEPORTER_TYPE_TWOWAY:
-	    MazeMaker.app.getMaze().setCell(new MazeTwoWayTeleporter(destX, destY, destZ, destW),
+	    MazeMaker.app.getMaze().setCell(new TwoWayTeleporter(destX, destY, destZ, destW),
 		    MazeMaker.editorLocationX, MazeMaker.editorLocationY, MazeMaker.editorCameFromZ,
 		    MazeMaker.editorCameFromW);
 	    MazeMaker.pairTwoWayTeleporter(destX, destY, destZ, destW);
@@ -687,7 +686,7 @@ public class MazeMaker {
 				    for (z = 0; z < mazeSizeZ; z++) {
 					for (x = 0; x < mazeSizeX; x++) {
 					    for (y = 0; y < mazeSizeY; y++) {
-						MazeMaker.app.getMaze().setCell(new MazeGround(), x, y, z, w);
+						MazeMaker.app.getMaze().setCell(new Ground(), x, y, z, w);
 					    }
 					}
 				    }
@@ -758,9 +757,9 @@ public class MazeMaker {
 	MazeMaker.editorCameFromW = w;
 	if (x != -1 && y != -1 && z != -1 && w != -1) {
 	    final MazeObject oldObj = MazeMaker.app.getMazeObject(x, y, z, w);
-	    if (!obj.getName().equals(new MazeStairsUp().getName())
-		    && !obj.getName().equals(new MazeStairsDown().getName())) {
-		if (obj.getName().equals(new MazeTwoWayTeleporter().getName())) {
+	    if (!obj.getName().equals(new StairsUp().getName())
+		    && !obj.getName().equals(new StairsDown().getName())) {
+		if (obj.getName().equals(new TwoWayTeleporter().getName())) {
 		    MazeMaker.app.getMaze().setCell(obj, x, y, z, w);
 		    MazeMaker.reverseCheckTwoWayTeleporterPair(z, w);
 		    MazeMaker.checkStairPair(z, w);
@@ -793,9 +792,9 @@ public class MazeMaker {
 	MazeMaker.editorCameFromW = w;
 	if (x != -1 && y != -1 && z != -1 && w != -1) {
 	    final MazeObject oldObj = MazeMaker.app.getMazeObject(x, y, z, w);
-	    if (!obj.getName().equals(new MazeStairsUp().getName())
-		    && !obj.getName().equals(new MazeStairsDown().getName())) {
-		if (obj.getName().equals(new MazeTwoWayTeleporter().getName())) {
+	    if (!obj.getName().equals(new StairsUp().getName())
+		    && !obj.getName().equals(new StairsDown().getName())) {
+		if (obj.getName().equals(new TwoWayTeleporter().getName())) {
 		    MazeMaker.app.getMaze().setCell(obj, x, y, z, w);
 		    MazeMaker.reverseCheckTwoWayTeleporterPair(z, w);
 		    MazeMaker.checkStairPair(z, w);

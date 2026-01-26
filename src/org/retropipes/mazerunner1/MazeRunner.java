@@ -30,79 +30,79 @@ import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 import javax.swing.WindowConstants;
 
-import org.retropipes.mazerunner1.objects.MazeAKey;
-import org.retropipes.mazerunner1.objects.MazeALock;
-import org.retropipes.mazerunner1.objects.MazeAnnihilationWand;
-import org.retropipes.mazerunner1.objects.MazeBomb;
-import org.retropipes.mazerunner1.objects.MazeBoots;
-import org.retropipes.mazerunner1.objects.MazeCKey;
-import org.retropipes.mazerunner1.objects.MazeCLock;
-import org.retropipes.mazerunner1.objects.MazeCrackedWall;
-import org.retropipes.mazerunner1.objects.MazeDKey;
-import org.retropipes.mazerunner1.objects.MazeDLock;
-import org.retropipes.mazerunner1.objects.MazeEnergySphere;
-import org.retropipes.mazerunner1.objects.MazeExplodingWall;
-import org.retropipes.mazerunner1.objects.MazeFKey;
-import org.retropipes.mazerunner1.objects.MazeFLock;
-import org.retropipes.mazerunner1.objects.MazeFakeFinish;
-import org.retropipes.mazerunner1.objects.MazeFakeWall;
-import org.retropipes.mazerunner1.objects.MazeFinish;
-import org.retropipes.mazerunner1.objects.MazeFinishMakingWand;
-import org.retropipes.mazerunner1.objects.MazeFinishTo;
-import org.retropipes.mazerunner1.objects.MazeForceField;
-import org.retropipes.mazerunner1.objects.MazeGKey;
-import org.retropipes.mazerunner1.objects.MazeGLock;
-import org.retropipes.mazerunner1.objects.MazeGround;
-import org.retropipes.mazerunner1.objects.MazeIce;
-import org.retropipes.mazerunner1.objects.MazeInvisibleOneShotTeleporter;
-import org.retropipes.mazerunner1.objects.MazeInvisibleTeleporter;
-import org.retropipes.mazerunner1.objects.MazeInvisibleWall;
-import org.retropipes.mazerunner1.objects.MazeKKey;
-import org.retropipes.mazerunner1.objects.MazeKLock;
-import org.retropipes.mazerunner1.objects.MazeKey;
-import org.retropipes.mazerunner1.objects.MazeLKey;
-import org.retropipes.mazerunner1.objects.MazeLLock;
-import org.retropipes.mazerunner1.objects.MazeLock;
-import org.retropipes.mazerunner1.objects.MazeMKey;
-import org.retropipes.mazerunner1.objects.MazeMLock;
-import org.retropipes.mazerunner1.objects.MazeNKey;
-import org.retropipes.mazerunner1.objects.MazeNLock;
-import org.retropipes.mazerunner1.objects.MazeOneShotTeleporter;
-import org.retropipes.mazerunner1.objects.MazeOneWayEastWall;
-import org.retropipes.mazerunner1.objects.MazeOneWayNorthWall;
-import org.retropipes.mazerunner1.objects.MazeOneWaySouthWall;
-import org.retropipes.mazerunner1.objects.MazeOneWayWestWall;
-import org.retropipes.mazerunner1.objects.MazePKey;
-import org.retropipes.mazerunner1.objects.MazePLock;
-import org.retropipes.mazerunner1.objects.MazePit;
-import org.retropipes.mazerunner1.objects.MazePlayer;
-import org.retropipes.mazerunner1.objects.MazePullableBlock;
-import org.retropipes.mazerunner1.objects.MazePushableBlock;
-import org.retropipes.mazerunner1.objects.MazePushablePullableBlock;
-import org.retropipes.mazerunner1.objects.MazeRKey;
-import org.retropipes.mazerunner1.objects.MazeRLock;
-import org.retropipes.mazerunner1.objects.MazeRandomInvisibleOneShotTeleporter;
-import org.retropipes.mazerunner1.objects.MazeRandomInvisibleTeleporter;
-import org.retropipes.mazerunner1.objects.MazeRandomOneShotTeleporter;
-import org.retropipes.mazerunner1.objects.MazeRandomTeleporter;
-import org.retropipes.mazerunner1.objects.MazeStairsDown;
-import org.retropipes.mazerunner1.objects.MazeStairsUp;
-import org.retropipes.mazerunner1.objects.MazeSunkenBlock;
-import org.retropipes.mazerunner1.objects.MazeTablet;
-import org.retropipes.mazerunner1.objects.MazeTabletSlot;
-import org.retropipes.mazerunner1.objects.MazeTeleportWand;
-import org.retropipes.mazerunner1.objects.MazeTeleporter;
-import org.retropipes.mazerunner1.objects.MazeTile;
-import org.retropipes.mazerunner1.objects.MazeTwoWayTeleporter;
-import org.retropipes.mazerunner1.objects.MazeUKey;
-import org.retropipes.mazerunner1.objects.MazeULock;
-import org.retropipes.mazerunner1.objects.MazeVoid;
-import org.retropipes.mazerunner1.objects.MazeWall;
-import org.retropipes.mazerunner1.objects.MazeWallMakingWand;
-import org.retropipes.mazerunner1.objects.MazeWater;
-import org.retropipes.mazerunner1.objects.MazeZKey;
-import org.retropipes.mazerunner1.objects.MazeZLock;
-import org.retropipes.mazerunner1.objects.abc.MazeGenericMovableObject;
+import org.retropipes.mazerunner1.objects.AKey;
+import org.retropipes.mazerunner1.objects.ALock;
+import org.retropipes.mazerunner1.objects.AnnihilationWand;
+import org.retropipes.mazerunner1.objects.Bomb;
+import org.retropipes.mazerunner1.objects.Boots;
+import org.retropipes.mazerunner1.objects.CKey;
+import org.retropipes.mazerunner1.objects.CLock;
+import org.retropipes.mazerunner1.objects.CrackedWall;
+import org.retropipes.mazerunner1.objects.DKey;
+import org.retropipes.mazerunner1.objects.DLock;
+import org.retropipes.mazerunner1.objects.EnergySphere;
+import org.retropipes.mazerunner1.objects.ExplodingWall;
+import org.retropipes.mazerunner1.objects.FKey;
+import org.retropipes.mazerunner1.objects.FLock;
+import org.retropipes.mazerunner1.objects.FakeFinish;
+import org.retropipes.mazerunner1.objects.FakeWall;
+import org.retropipes.mazerunner1.objects.Finish;
+import org.retropipes.mazerunner1.objects.FinishMakingWand;
+import org.retropipes.mazerunner1.objects.FinishTo;
+import org.retropipes.mazerunner1.objects.ForceField;
+import org.retropipes.mazerunner1.objects.GKey;
+import org.retropipes.mazerunner1.objects.GLock;
+import org.retropipes.mazerunner1.objects.Ground;
+import org.retropipes.mazerunner1.objects.Ice;
+import org.retropipes.mazerunner1.objects.InvisibleOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.InvisibleTeleporter;
+import org.retropipes.mazerunner1.objects.InvisibleWall;
+import org.retropipes.mazerunner1.objects.KKey;
+import org.retropipes.mazerunner1.objects.KLock;
+import org.retropipes.mazerunner1.objects.Key;
+import org.retropipes.mazerunner1.objects.LKey;
+import org.retropipes.mazerunner1.objects.LLock;
+import org.retropipes.mazerunner1.objects.Lock;
+import org.retropipes.mazerunner1.objects.MKey;
+import org.retropipes.mazerunner1.objects.MLock;
+import org.retropipes.mazerunner1.objects.NKey;
+import org.retropipes.mazerunner1.objects.NLock;
+import org.retropipes.mazerunner1.objects.OneShotTeleporter;
+import org.retropipes.mazerunner1.objects.OneWayEastWall;
+import org.retropipes.mazerunner1.objects.OneWayNorthWall;
+import org.retropipes.mazerunner1.objects.OneWaySouthWall;
+import org.retropipes.mazerunner1.objects.OneWayWestWall;
+import org.retropipes.mazerunner1.objects.PKey;
+import org.retropipes.mazerunner1.objects.PLock;
+import org.retropipes.mazerunner1.objects.Pit;
+import org.retropipes.mazerunner1.objects.Player;
+import org.retropipes.mazerunner1.objects.PullableBlock;
+import org.retropipes.mazerunner1.objects.PushableBlock;
+import org.retropipes.mazerunner1.objects.PushablePullableBlock;
+import org.retropipes.mazerunner1.objects.RKey;
+import org.retropipes.mazerunner1.objects.RLock;
+import org.retropipes.mazerunner1.objects.RandomInvisibleOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.RandomInvisibleTeleporter;
+import org.retropipes.mazerunner1.objects.RandomOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.RandomTeleporter;
+import org.retropipes.mazerunner1.objects.StairsDown;
+import org.retropipes.mazerunner1.objects.StairsUp;
+import org.retropipes.mazerunner1.objects.SunkenBlock;
+import org.retropipes.mazerunner1.objects.Tablet;
+import org.retropipes.mazerunner1.objects.TabletSlot;
+import org.retropipes.mazerunner1.objects.TeleportWand;
+import org.retropipes.mazerunner1.objects.Teleporter;
+import org.retropipes.mazerunner1.objects.Tile;
+import org.retropipes.mazerunner1.objects.TwoWayTeleporter;
+import org.retropipes.mazerunner1.objects.UKey;
+import org.retropipes.mazerunner1.objects.ULock;
+import org.retropipes.mazerunner1.objects.EmptyVoid;
+import org.retropipes.mazerunner1.objects.Wall;
+import org.retropipes.mazerunner1.objects.WallMakingWand;
+import org.retropipes.mazerunner1.objects.Water;
+import org.retropipes.mazerunner1.objects.ZKey;
+import org.retropipes.mazerunner1.objects.ZLock;
+import org.retropipes.mazerunner1.objects.abc.AbstractMovableObject;
 
 public class MazeRunner {
     // Static fields
@@ -168,7 +168,7 @@ public class MazeRunner {
 	this.MAX_INVENTORY = this.inv.getMaximum();
 	this.setDefaultPrefs();
 	this.setUsingAnItem(false);
-	this.savedMazeObject = new MazeGround();
+	this.savedMazeObject = new Ground();
 	this.showMenu();
     }
 
@@ -360,7 +360,7 @@ public class MazeRunner {
     }
 
     public void updatePosition(final int x, final int y) {
-	MazeObject o = new MazeWall();
+	MazeObject o = new Wall();
 	MazeObject pushedInto = null;
 	MazeObject acted = null;
 	final boolean isXNonZero = x != 0;
@@ -380,7 +380,7 @@ public class MazeRunner {
 	    pushedInto = this.gameMaze.getCell(this.playerLocationX + pushX, this.playerLocationY + pushY,
 		    this.playerLocationZ, this.playerLocationW);
 	} catch (final ArrayIndexOutOfBoundsException ae) {
-	    pushedInto = new MazeWall();
+	    pushedInto = new Wall();
 	}
 	do {
 	    try {
@@ -389,7 +389,7 @@ public class MazeRunner {
 		o.playSound();
 		o.preMoveAction(true, this.playerLocationX + x, this.playerLocationY + y, this.inv);
 	    } catch (final ArrayIndexOutOfBoundsException ae) {
-		o = new MazeGround();
+		o = new Ground();
 	    }
 	    this.oldPlayerLocationX = this.playerLocationX;
 	    this.oldPlayerLocationY = this.playerLocationY;
@@ -405,7 +405,7 @@ public class MazeRunner {
 				    this.playerLocationY + y, this.inv)) {
 			this.gameMaze.setCell(this.savedMazeObject, this.playerLocationX, this.playerLocationY,
 				this.playerLocationZ, this.playerLocationW);
-			acted = new MazeGround();
+			acted = new Ground();
 			try {
 			    acted = this.gameMaze.getCell(this.playerLocationX - x, this.playerLocationY - y,
 				    this.playerLocationZ, this.playerLocationW);
@@ -413,7 +413,7 @@ public class MazeRunner {
 			    // Do nothing
 			}
 			if (acted.isPullable() && this.isPullInProgress()) {
-			    final MazeGenericMovableObject pullable = (MazeGenericMovableObject) acted;
+			    final AbstractMovableObject pullable = (AbstractMovableObject) acted;
 			    final MazeObject savedObject = pullable.getSavedObject();
 			    final MazeObject pulledInto = this.gameMaze.getCell(this.playerLocationX + pullX,
 				    this.playerLocationY + pullY, this.playerLocationZ, this.playerLocationW);
@@ -431,7 +431,7 @@ public class MazeRunner {
 			this.lowerRightViewingWindowY += x;
 			this.savedMazeObject = this.gameMaze.getCell(this.playerLocationX, this.playerLocationY,
 				this.playerLocationZ, this.playerLocationW);
-			this.gameMaze.setCell(new MazePlayer(), this.playerLocationX, this.playerLocationY,
+			this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY,
 				this.playerLocationZ, this.playerLocationW);
 			this.redrawMaze();
 			this.isDirty = true;
@@ -442,7 +442,7 @@ public class MazeRunner {
 				this.playerLocationZ, this.playerLocationW);
 			if (acted.isPushable()) {
 			    this.pushInProgress = true;
-			    final MazeGenericMovableObject pushable = (MazeGenericMovableObject) acted;
+			    final AbstractMovableObject pushable = (AbstractMovableObject) acted;
 			    final MazeObject savedObject = pushable.getSavedObject();
 			    o = savedObject;
 			    pushedInto = this.gameMaze.getCell(this.playerLocationX + pushX,
@@ -463,7 +463,7 @@ public class MazeRunner {
 				this.lowerRightViewingWindowY += x;
 				this.savedMazeObject = this.gameMaze.getCell(this.playerLocationX, this.playerLocationY,
 					this.playerLocationZ, this.playerLocationW);
-				this.gameMaze.setCell(new MazePlayer(), this.playerLocationX, this.playerLocationY,
+				this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY,
 					this.playerLocationZ, this.playerLocationW);
 				this.redrawMaze();
 				this.isDirty = true;
@@ -483,12 +483,12 @@ public class MazeRunner {
 		this.upperLeftViewingWindowY = this.oldUpperLeftViewingWindowY;
 		this.lowerRightViewingWindowX = this.oldLowerRightViewingWindowX;
 		this.lowerRightViewingWindowY = this.oldLowerRightViewingWindowY;
-		this.gameMaze.setCell(new MazePlayer(), this.playerLocationX, this.playerLocationY,
+		this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY,
 			this.playerLocationZ, this.playerLocationW);
 		if (this.getMessageEnabled(MazeRunner.MESSAGE_CANNOT_GO_OUTSIDE_MAZE)) {
 		    Messager.showMessage("Can't go outside the maze");
 		}
-		o = new MazeGround();
+		o = new Ground();
 	    }
 	} while (!o.hasFriction() && !this.pushInProgress
 		|| this.pushInProgress && !o.hasFriction() && !pushedInto.hasFriction());
@@ -520,7 +520,7 @@ public class MazeRunner {
     }
 
     public void updatePushedIntoPositionAbsolute(final int x, final int y, final int z, final int w, final int x2,
-	    final int y2, final int z2, final int w2, final MazeGenericMovableObject pushedInto,
+	    final int y2, final int z2, final int w2, final AbstractMovableObject pushedInto,
 	    final MazeObject source) {
 	try {
 	    if (!this.gameMaze.getCell(x, y, z, w).isConditionallySolid(this.inv)) {
@@ -532,7 +532,7 @@ public class MazeRunner {
 		this.isDirty = true;
 	    }
 	} catch (final ArrayIndexOutOfBoundsException ae) {
-	    this.gameMaze.setCell(new MazeTile(), x2, y2, z2, w2);
+	    this.gameMaze.setCell(new Tile(), x2, y2, z2, w2);
 	}
     }
 
@@ -565,7 +565,7 @@ public class MazeRunner {
 		this.lowerRightViewingWindowY = this.playerLocationX + (MazeRunner.VIEWING_WINDOW_SIZE_Y - 1) / 2;
 		this.savedMazeObject = this.gameMaze.getCell(this.playerLocationX, this.playerLocationY,
 			this.playerLocationZ, this.playerLocationW);
-		this.gameMaze.setCell(new MazePlayer(), this.playerLocationX, this.playerLocationY,
+		this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY,
 			this.playerLocationZ, this.playerLocationW);
 		this.redrawMaze();
 		this.isDirty = true;
@@ -580,7 +580,7 @@ public class MazeRunner {
 	    this.upperLeftViewingWindowY = this.oldUpperLeftViewingWindowY;
 	    this.lowerRightViewingWindowX = this.oldLowerRightViewingWindowX;
 	    this.lowerRightViewingWindowY = this.oldLowerRightViewingWindowY;
-	    this.gameMaze.setCell(new MazePlayer(), this.playerLocationX, this.playerLocationY, this.playerLocationZ,
+	    this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY, this.playerLocationZ,
 		    this.playerLocationW);
 	    if (this.getMessageEnabled(MazeRunner.MESSAGE_CANNOT_GO_OUTSIDE_MAZE)) {
 		Messager.showMessage("Can't go outside the maze");
@@ -618,7 +618,7 @@ public class MazeRunner {
 		this.lowerRightViewingWindowY = this.playerLocationX + (MazeRunner.VIEWING_WINDOW_SIZE_Y - 1) / 2;
 		this.savedMazeObject = this.gameMaze.getCell(this.playerLocationX, this.playerLocationY,
 			this.playerLocationZ, this.playerLocationW);
-		this.gameMaze.setCell(new MazePlayer(), this.playerLocationX, this.playerLocationY,
+		this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY,
 			this.playerLocationZ, this.playerLocationW);
 		this.redrawMaze();
 		this.isDirty = true;
@@ -632,7 +632,7 @@ public class MazeRunner {
 	    this.upperLeftViewingWindowY = this.oldUpperLeftViewingWindowY;
 	    this.lowerRightViewingWindowX = this.oldLowerRightViewingWindowX;
 	    this.lowerRightViewingWindowY = this.oldLowerRightViewingWindowY;
-	    this.gameMaze.setCell(new MazePlayer(), this.playerLocationX, this.playerLocationY, this.playerLocationZ,
+	    this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY, this.playerLocationZ,
 		    this.playerLocationW);
 	    if (this.getMessageEnabled(MazeRunner.MESSAGE_CANNOT_GO_OUTSIDE_MAZE)) {
 		Messager.showMessage("Can't go outside the maze");
@@ -655,7 +655,7 @@ public class MazeRunner {
 				SwingConstants.CENTER));
 		    } catch (final ArrayIndexOutOfBoundsException ae) {
 			this.outputPane.add(new JLabel("",
-				new MazeVoid().gameRenderHook(y, x, this.playerLocationZ, this.playerLocationW),
+				new EmptyVoid().gameRenderHook(y, x, this.playerLocationZ, this.playerLocationW),
 				SwingConstants.CENTER));
 		    }
 		}
@@ -844,7 +844,7 @@ public class MazeRunner {
     }
 
     public void decay() {
-	this.savedMazeObject = new MazeGround();
+	this.savedMazeObject = new Ground();
     }
 
     public void morph(final MazeObject morphInto, final int x, final int y, final int z, final int w) {
@@ -869,28 +869,28 @@ public class MazeRunner {
     }
 
     public void showInventoryDialog() {
-	final int keyCount = this.inv.getItemCount(new MazeKey());
-	final int ikeyCount = this.inv.getItemCount(new MazeTablet());
-	final int bombCount = this.inv.getItemCount(new MazeBomb());
-	final int AKeyCount = this.inv.getItemCount(new MazeAKey());
-	final int CKeyCount = this.inv.getItemCount(new MazeCKey());
-	final int DKeyCount = this.inv.getItemCount(new MazeDKey());
-	final int FKeyCount = this.inv.getItemCount(new MazeFKey());
-	final int GKeyCount = this.inv.getItemCount(new MazeGKey());
-	final int KKeyCount = this.inv.getItemCount(new MazeKKey());
-	final int LKeyCount = this.inv.getItemCount(new MazeLKey());
-	final int MKeyCount = this.inv.getItemCount(new MazeMKey());
-	final int NKeyCount = this.inv.getItemCount(new MazeNKey());
-	final int PKeyCount = this.inv.getItemCount(new MazePKey());
-	final int RKeyCount = this.inv.getItemCount(new MazeRKey());
-	final int UKeyCount = this.inv.getItemCount(new MazeUKey());
-	final int ZKeyCount = this.inv.getItemCount(new MazeZKey());
-	final int bootsCount = this.inv.getItemCount(new MazeBoots());
-	final int sphereCount = this.inv.getItemCount(new MazeEnergySphere());
-	final int AWCount = this.inv.getItemCount(new MazeAnnihilationWand());
-	final int FMWCount = this.inv.getItemCount(new MazeFinishMakingWand());
-	final int WMWCount = this.inv.getItemCount(new MazeWallMakingWand());
-	final int TWCount = this.inv.getItemCount(new MazeTeleportWand());
+	final int keyCount = this.inv.getItemCount(new Key());
+	final int ikeyCount = this.inv.getItemCount(new Tablet());
+	final int bombCount = this.inv.getItemCount(new Bomb());
+	final int AKeyCount = this.inv.getItemCount(new AKey());
+	final int CKeyCount = this.inv.getItemCount(new CKey());
+	final int DKeyCount = this.inv.getItemCount(new DKey());
+	final int FKeyCount = this.inv.getItemCount(new FKey());
+	final int GKeyCount = this.inv.getItemCount(new GKey());
+	final int KKeyCount = this.inv.getItemCount(new KKey());
+	final int LKeyCount = this.inv.getItemCount(new LKey());
+	final int MKeyCount = this.inv.getItemCount(new MKey());
+	final int NKeyCount = this.inv.getItemCount(new NKey());
+	final int PKeyCount = this.inv.getItemCount(new PKey());
+	final int RKeyCount = this.inv.getItemCount(new RKey());
+	final int UKeyCount = this.inv.getItemCount(new UKey());
+	final int ZKeyCount = this.inv.getItemCount(new ZKey());
+	final int bootsCount = this.inv.getItemCount(new Boots());
+	final int sphereCount = this.inv.getItemCount(new EnergySphere());
+	final int AWCount = this.inv.getItemCount(new AnnihilationWand());
+	final int FMWCount = this.inv.getItemCount(new FinishMakingWand());
+	final int WMWCount = this.inv.getItemCount(new WallMakingWand());
+	final int TWCount = this.inv.getItemCount(new TeleportWand());
 	String hasikey, hasLetters, hasBoots, hasSphere;
 	hasLetters = "";
 	if (ikeyCount > 0) {
@@ -958,18 +958,18 @@ public class MazeRunner {
 
     public void showUseDialog() {
 	int x;
-	final int AWCount = this.inv.getItemCount(new MazeAnnihilationWand());
-	final int FMWCount = this.inv.getItemCount(new MazeFinishMakingWand());
-	final int WMWCount = this.inv.getItemCount(new MazeWallMakingWand());
-	final int TWCount = this.inv.getItemCount(new MazeTeleportWand());
-	final MazeObject[] choices = { new MazeAnnihilationWand(), new MazeFinishMakingWand(), new MazeWallMakingWand(),
-		new MazeTeleportWand() };
-	final Object[] userChoices = { new MazeAnnihilationWand().getName() + " (" + Integer.valueOf(AWCount) + ")",
-		new MazeFinishMakingWand().getName() + " (" + Integer.valueOf(FMWCount) + ")",
-		new MazeWallMakingWand().getName() + " (" + Integer.valueOf(WMWCount) + ")",
-		new MazeTeleportWand().getName() + " (" + Integer.valueOf(TWCount) + ")" };
+	final int AWCount = this.inv.getItemCount(new AnnihilationWand());
+	final int FMWCount = this.inv.getItemCount(new FinishMakingWand());
+	final int WMWCount = this.inv.getItemCount(new WallMakingWand());
+	final int TWCount = this.inv.getItemCount(new TeleportWand());
+	final MazeObject[] choices = { new AnnihilationWand(), new FinishMakingWand(), new WallMakingWand(),
+		new TeleportWand() };
+	final Object[] userChoices = { new AnnihilationWand().getName() + " (" + Integer.valueOf(AWCount) + ")",
+		new FinishMakingWand().getName() + " (" + Integer.valueOf(FMWCount) + ")",
+		new WallMakingWand().getName() + " (" + Integer.valueOf(WMWCount) + ")",
+		new TeleportWand().getName() + " (" + Integer.valueOf(TWCount) + ")" };
 	final String result = Messager.showInputDialog("Use which item?", "Maze Runner", userChoices,
-		new MazeAnnihilationWand().getName());
+		new AnnihilationWand().getName());
 	try {
 	    final int beginIndex = 0;
 	    final int endIndex = result.indexOf('(') - 1;
@@ -1074,23 +1074,23 @@ public class MazeRunner {
 	    try {
 		final MazeObject target = this.gameMaze.getCell(destX, destY, destZ, destW);
 		final String name = this.objectBeingUsed.getName();
-		if (target.isSolid() && name.equals(new MazeTeleportWand().getName())) {
+		if (target.isSolid() && name.equals(new TeleportWand().getName())) {
 		    this.setUsingAnItem(false);
 		    Messager.showMessage("Can't teleport there");
 		}
-		if (target.getName().equals(new MazePlayer().getName())) {
+		if (target.getName().equals(new Player().getName())) {
 		    this.setUsingAnItem(false);
 		    Messager.showMessage("Don't aim at yourself!");
 		}
-		if (!target.isDestroyable() && name.equals(new MazeAnnihilationWand().getName())) {
+		if (!target.isDestroyable() && name.equals(new AnnihilationWand().getName())) {
 		    this.setUsingAnItem(false);
 		    Messager.showMessage("Can't destroy that");
 		}
-		if (!target.isDestroyable() && name.equals(new MazeWallMakingWand().getName())) {
+		if (!target.isDestroyable() && name.equals(new WallMakingWand().getName())) {
 		    this.setUsingAnItem(false);
 		    Messager.showMessage("Can't create a wall there");
 		}
-		if (!target.isDestroyable() && name.equals(new MazeFinishMakingWand().getName())) {
+		if (!target.isDestroyable() && name.equals(new FinishMakingWand().getName())) {
 		    this.setUsingAnItem(false);
 		    Messager.showMessage("Can't create a finish there");
 		}
@@ -1345,203 +1345,203 @@ public class MazeRunner {
 	final String inputLine = mazeFile.readLine();
 	if (inputLine != null) {
 	    if (inputLine.equals("G")) {
-		this.gameMaze.setCell(new MazeGround(), x, y, z, w);
+		this.gameMaze.setCell(new Ground(), x, y, z, w);
 	    } else if (inputLine.equals("W")) {
-		this.gameMaze.setCell(new MazeWall(), x, y, z, w);
+		this.gameMaze.setCell(new Wall(), x, y, z, w);
 	    } else if (inputLine.equals("P")) {
-		this.gameMaze.setCell(new MazePlayer(), x, y, z, w);
+		this.gameMaze.setCell(new Player(), x, y, z, w);
 		this.playerLocationX = x;
 		this.playerLocationY = y;
 		this.playerLocationZ = z;
 		this.playerLocationW = w;
 	    } else if (inputLine.equals("IW")) {
-		this.gameMaze.setCell(new MazeInvisibleWall(), x, y, z, w);
+		this.gameMaze.setCell(new InvisibleWall(), x, y, z, w);
 	    } else if (inputLine.equals("FW")) {
-		this.gameMaze.setCell(new MazeFakeWall(), x, y, z, w);
+		this.gameMaze.setCell(new FakeWall(), x, y, z, w);
 	    } else if (inputLine.equals("FF")) {
-		this.gameMaze.setCell(new MazeFakeFinish(), x, y, z, w);
+		this.gameMaze.setCell(new FakeFinish(), x, y, z, w);
 	    } else if (inputLine.equals("F")) {
-		this.gameMaze.setCell(new MazeFinish(), x, y, z, w);
+		this.gameMaze.setCell(new Finish(), x, y, z, w);
 	    } else if (inputLine.equals("L")) {
-		this.gameMaze.setCell(new MazeLock(), x, y, z, w);
+		this.gameMaze.setCell(new Lock(), x, y, z, w);
 	    } else if (inputLine.equals("K")) {
-		this.gameMaze.setCell(new MazeKey(), x, y, z, w);
+		this.gameMaze.setCell(new Key(), x, y, z, w);
 	    } else if (inputLine.equals("L1")) {
-		this.gameMaze.setCell(new MazeCrackedWall(), x, y, z, w);
+		this.gameMaze.setCell(new CrackedWall(), x, y, z, w);
 	    } else if (inputLine.equals("K1")) {
-		this.gameMaze.setCell(new MazeBomb(), x, y, z, w);
+		this.gameMaze.setCell(new Bomb(), x, y, z, w);
 	    } else if (inputLine.equals("IL")) {
-		this.gameMaze.setCell(new MazeTabletSlot(), x, y, z, w);
+		this.gameMaze.setCell(new TabletSlot(), x, y, z, w);
 	    } else if (inputLine.equals("IK")) {
-		this.gameMaze.setCell(new MazeTablet(), x, y, z, w);
+		this.gameMaze.setCell(new Tablet(), x, y, z, w);
 	    } else if (inputLine.equals("AL")) {
-		this.gameMaze.setCell(new MazeALock(), x, y, z, w);
+		this.gameMaze.setCell(new ALock(), x, y, z, w);
 	    } else if (inputLine.equals("AK")) {
-		this.gameMaze.setCell(new MazeAKey(), x, y, z, w);
+		this.gameMaze.setCell(new AKey(), x, y, z, w);
 	    } else if (inputLine.equals("CL")) {
-		this.gameMaze.setCell(new MazeCLock(), x, y, z, w);
+		this.gameMaze.setCell(new CLock(), x, y, z, w);
 	    } else if (inputLine.equals("CK")) {
-		this.gameMaze.setCell(new MazeCKey(), x, y, z, w);
+		this.gameMaze.setCell(new CKey(), x, y, z, w);
 	    } else if (inputLine.equals("DL")) {
-		this.gameMaze.setCell(new MazeDLock(), x, y, z, w);
+		this.gameMaze.setCell(new DLock(), x, y, z, w);
 	    } else if (inputLine.equals("DK")) {
-		this.gameMaze.setCell(new MazeDKey(), x, y, z, w);
+		this.gameMaze.setCell(new DKey(), x, y, z, w);
 	    } else if (inputLine.equals("FL")) {
-		this.gameMaze.setCell(new MazeFLock(), x, y, z, w);
+		this.gameMaze.setCell(new FLock(), x, y, z, w);
 	    } else if (inputLine.equals("FK")) {
-		this.gameMaze.setCell(new MazeFKey(), x, y, z, w);
+		this.gameMaze.setCell(new FKey(), x, y, z, w);
 	    } else if (inputLine.equals("GL")) {
-		this.gameMaze.setCell(new MazeGLock(), x, y, z, w);
+		this.gameMaze.setCell(new GLock(), x, y, z, w);
 	    } else if (inputLine.equals("GK")) {
-		this.gameMaze.setCell(new MazeGKey(), x, y, z, w);
+		this.gameMaze.setCell(new GKey(), x, y, z, w);
 	    } else if (inputLine.equals("KL")) {
-		this.gameMaze.setCell(new MazeKLock(), x, y, z, w);
+		this.gameMaze.setCell(new KLock(), x, y, z, w);
 	    } else if (inputLine.equals("KK")) {
-		this.gameMaze.setCell(new MazeKKey(), x, y, z, w);
+		this.gameMaze.setCell(new KKey(), x, y, z, w);
 	    } else if (inputLine.equals("LL")) {
-		this.gameMaze.setCell(new MazeLLock(), x, y, z, w);
+		this.gameMaze.setCell(new LLock(), x, y, z, w);
 	    } else if (inputLine.equals("LK")) {
-		this.gameMaze.setCell(new MazeLKey(), x, y, z, w);
+		this.gameMaze.setCell(new LKey(), x, y, z, w);
 	    } else if (inputLine.equals("ML")) {
-		this.gameMaze.setCell(new MazeMLock(), x, y, z, w);
+		this.gameMaze.setCell(new MLock(), x, y, z, w);
 	    } else if (inputLine.equals("MK")) {
-		this.gameMaze.setCell(new MazeMKey(), x, y, z, w);
+		this.gameMaze.setCell(new MKey(), x, y, z, w);
 	    } else if (inputLine.equals("NL")) {
-		this.gameMaze.setCell(new MazeNLock(), x, y, z, w);
+		this.gameMaze.setCell(new NLock(), x, y, z, w);
 	    } else if (inputLine.equals("NK")) {
-		this.gameMaze.setCell(new MazeNKey(), x, y, z, w);
+		this.gameMaze.setCell(new NKey(), x, y, z, w);
 	    } else if (inputLine.equals("PL")) {
-		this.gameMaze.setCell(new MazePLock(), x, y, z, w);
+		this.gameMaze.setCell(new PLock(), x, y, z, w);
 	    } else if (inputLine.equals("PK")) {
-		this.gameMaze.setCell(new MazePKey(), x, y, z, w);
+		this.gameMaze.setCell(new PKey(), x, y, z, w);
 	    } else if (inputLine.equals("RL")) {
-		this.gameMaze.setCell(new MazeRLock(), x, y, z, w);
+		this.gameMaze.setCell(new RLock(), x, y, z, w);
 	    } else if (inputLine.equals("RK")) {
-		this.gameMaze.setCell(new MazeRKey(), x, y, z, w);
+		this.gameMaze.setCell(new RKey(), x, y, z, w);
 	    } else if (inputLine.equals("UL")) {
-		this.gameMaze.setCell(new MazeULock(), x, y, z, w);
+		this.gameMaze.setCell(new ULock(), x, y, z, w);
 	    } else if (inputLine.equals("UK")) {
-		this.gameMaze.setCell(new MazeUKey(), x, y, z, w);
+		this.gameMaze.setCell(new UKey(), x, y, z, w);
 	    } else if (inputLine.equals("ZL")) {
-		this.gameMaze.setCell(new MazeZLock(), x, y, z, w);
+		this.gameMaze.setCell(new ZLock(), x, y, z, w);
 	    } else if (inputLine.equals("ZK")) {
-		this.gameMaze.setCell(new MazeZKey(), x, y, z, w);
+		this.gameMaze.setCell(new ZKey(), x, y, z, w);
 	    } else if (inputLine.equals("T")) {
 		destY = Integer.parseInt(mazeFile.readLine());
 		destX = Integer.parseInt(mazeFile.readLine());
 		destZ = Integer.parseInt(mazeFile.readLine());
 		destW = Integer.parseInt(mazeFile.readLine());
-		this.gameMaze.setCell(new MazeTeleporter(destX, destY, destZ, destW), x, y, z, w);
+		this.gameMaze.setCell(new Teleporter(destX, destY, destZ, destW), x, y, z, w);
 	    } else if (inputLine.equals("IT")) {
 		destY = Integer.parseInt(mazeFile.readLine());
 		destX = Integer.parseInt(mazeFile.readLine());
 		destZ = Integer.parseInt(mazeFile.readLine());
 		destW = Integer.parseInt(mazeFile.readLine());
-		this.gameMaze.setCell(new MazeInvisibleTeleporter(destX, destY, destZ, destW), x, y, z, w);
+		this.gameMaze.setCell(new InvisibleTeleporter(destX, destY, destZ, destW), x, y, z, w);
 	    } else if (inputLine.equals("RT")) {
 		destY = Integer.parseInt(mazeFile.readLine());
 		destX = Integer.parseInt(mazeFile.readLine());
-		this.gameMaze.setCell(new MazeRandomTeleporter(destX, destY), x, y, z, w);
+		this.gameMaze.setCell(new RandomTeleporter(destX, destY), x, y, z, w);
 	    } else if (inputLine.equals("OT")) {
 		destY = Integer.parseInt(mazeFile.readLine());
 		destX = Integer.parseInt(mazeFile.readLine());
 		destZ = Integer.parseInt(mazeFile.readLine());
 		destW = Integer.parseInt(mazeFile.readLine());
-		this.gameMaze.setCell(new MazeOneShotTeleporter(destX, destY, destZ, destW), x, y, z, w);
+		this.gameMaze.setCell(new OneShotTeleporter(destX, destY, destZ, destW), x, y, z, w);
 	    } else if (inputLine.equals("ROT")) {
 		destY = Integer.parseInt(mazeFile.readLine());
 		destX = Integer.parseInt(mazeFile.readLine());
-		this.gameMaze.setCell(new MazeRandomOneShotTeleporter(destX, destY), x, y, z, w);
+		this.gameMaze.setCell(new RandomOneShotTeleporter(destX, destY), x, y, z, w);
 	    } else if (inputLine.equals("RIT")) {
 		destY = Integer.parseInt(mazeFile.readLine());
 		destX = Integer.parseInt(mazeFile.readLine());
-		this.gameMaze.setCell(new MazeRandomInvisibleTeleporter(destX, destY), x, y, z, w);
+		this.gameMaze.setCell(new RandomInvisibleTeleporter(destX, destY), x, y, z, w);
 	    } else if (inputLine.equals("IOT")) {
 		destY = Integer.parseInt(mazeFile.readLine());
 		destX = Integer.parseInt(mazeFile.readLine());
 		destZ = Integer.parseInt(mazeFile.readLine());
 		destW = Integer.parseInt(mazeFile.readLine());
-		this.gameMaze.setCell(new MazeInvisibleOneShotTeleporter(destX, destY, destZ, destW), x, y, z, w);
+		this.gameMaze.setCell(new InvisibleOneShotTeleporter(destX, destY, destZ, destW), x, y, z, w);
 	    } else if (inputLine.equals("RIOT")) {
 		destY = Integer.parseInt(mazeFile.readLine());
 		destX = Integer.parseInt(mazeFile.readLine());
-		this.gameMaze.setCell(new MazeRandomInvisibleOneShotTeleporter(destX, destY), x, y, z, w);
+		this.gameMaze.setCell(new RandomInvisibleOneShotTeleporter(destX, destY), x, y, z, w);
 	    } else if (inputLine.equals("OWEW")) {
-		this.gameMaze.setCell(new MazeOneWayEastWall(), x, y, z, w);
+		this.gameMaze.setCell(new OneWayEastWall(), x, y, z, w);
 	    } else if (inputLine.equals("OWNW")) {
-		this.gameMaze.setCell(new MazeOneWayNorthWall(), x, y, z, w);
+		this.gameMaze.setCell(new OneWayNorthWall(), x, y, z, w);
 	    } else if (inputLine.equals("OWSW")) {
-		this.gameMaze.setCell(new MazeOneWaySouthWall(), x, y, z, w);
+		this.gameMaze.setCell(new OneWaySouthWall(), x, y, z, w);
 	    } else if (inputLine.equals("OWWW")) {
-		this.gameMaze.setCell(new MazeOneWayWestWall(), x, y, z, w);
+		this.gameMaze.setCell(new OneWayWestWall(), x, y, z, w);
 	    } else if (inputLine.equals("DOWN")) {
-		this.gameMaze.setCell(new MazeStairsDown(), x, y, z, w);
+		this.gameMaze.setCell(new StairsDown(), x, y, z, w);
 	    } else if (inputLine.equals("UP")) {
-		this.gameMaze.setCell(new MazeStairsUp(), x, y, z, w);
+		this.gameMaze.setCell(new StairsUp(), x, y, z, w);
 	    } else if (inputLine.equals("T2")) {
 		destY = Integer.parseInt(mazeFile.readLine());
 		destX = Integer.parseInt(mazeFile.readLine());
 		destZ = Integer.parseInt(mazeFile.readLine());
 		destW = Integer.parseInt(mazeFile.readLine());
-		this.gameMaze.setCell(new MazeTwoWayTeleporter(destX, destY, destZ, destW), x, y, z, w);
+		this.gameMaze.setCell(new TwoWayTeleporter(destX, destY, destZ, destW), x, y, z, w);
 	    } else if (inputLine.equals("PIT")) {
-		this.gameMaze.setCell(new MazePit(), x, y, z, w);
+		this.gameMaze.setCell(new Pit(), x, y, z, w);
 	    } else if (inputLine.equals("TILE")) {
-		this.gameMaze.setCell(new MazeTile(), x, y, z, w);
+		this.gameMaze.setCell(new Tile(), x, y, z, w);
 	    } else if (inputLine.equals("PB")) {
-		final MazePushableBlock pb = new MazePushableBlock();
+		final PushableBlock pb = new PushableBlock();
 		final String innerObjStr = mazeFile.readLine();
 		if (innerObjStr.equals("TILE")) {
-		    pb.setSavedObject(new MazeTile());
+		    pb.setSavedObject(new Tile());
 		} else if (innerObjStr.equals("SB")) {
-		    pb.setSavedObject(new MazeSunkenBlock());
+		    pb.setSavedObject(new SunkenBlock());
 		}
 		this.gameMaze.setCell(pb, x, y, z, w);
 	    } else if (inputLine.equals("UB")) {
-		final MazePullableBlock pb = new MazePullableBlock();
+		final PullableBlock pb = new PullableBlock();
 		final String innerObjStr = mazeFile.readLine();
 		if (innerObjStr.equals("TILE")) {
-		    pb.setSavedObject(new MazeTile());
+		    pb.setSavedObject(new Tile());
 		} else if (innerObjStr.equals("SB")) {
-		    pb.setSavedObject(new MazeSunkenBlock());
+		    pb.setSavedObject(new SunkenBlock());
 		}
 		this.gameMaze.setCell(pb, x, y, z, w);
 	    } else if (inputLine.equals("PUB")) {
-		final MazePushablePullableBlock pb = new MazePushablePullableBlock();
+		final PushablePullableBlock pb = new PushablePullableBlock();
 		final String innerObjStr = mazeFile.readLine();
 		if (innerObjStr.equals("TILE")) {
-		    pb.setSavedObject(new MazeTile());
+		    pb.setSavedObject(new Tile());
 		} else if (innerObjStr.equals("SB")) {
-		    pb.setSavedObject(new MazeSunkenBlock());
+		    pb.setSavedObject(new SunkenBlock());
 		}
 		this.gameMaze.setCell(pb, x, y, z, w);
 	    } else if (inputLine.equals("ICE")) {
-		this.gameMaze.setCell(new MazeIce(), x, y, z, w);
+		this.gameMaze.setCell(new Ice(), x, y, z, w);
 	    } else if (inputLine.equals("FT")) {
 		destW = Integer.parseInt(mazeFile.readLine());
-		this.gameMaze.setCell(new MazeFinishTo(destW), x, y, z, w);
+		this.gameMaze.setCell(new FinishTo(destW), x, y, z, w);
 	    } else if (inputLine.equals("BOOTS")) {
-		this.gameMaze.setCell(new MazeBoots(), x, y, z, w);
+		this.gameMaze.setCell(new Boots(), x, y, z, w);
 	    } else if (inputLine.equals("WATER")) {
-		this.gameMaze.setCell(new MazeWater(), x, y, z, w);
+		this.gameMaze.setCell(new Water(), x, y, z, w);
 	    } else if (inputLine.equals("SB")) {
-		this.gameMaze.setCell(new MazeSunkenBlock(), x, y, z, w);
+		this.gameMaze.setCell(new SunkenBlock(), x, y, z, w);
 	    } else if (inputLine.equals("ES")) {
-		this.gameMaze.setCell(new MazeEnergySphere(), x, y, z, w);
+		this.gameMaze.setCell(new EnergySphere(), x, y, z, w);
 	    } else if (inputLine.equals("FORCE")) {
-		this.gameMaze.setCell(new MazeForceField(), x, y, z, w);
+		this.gameMaze.setCell(new ForceField(), x, y, z, w);
 	    } else if (inputLine.equals("AW")) {
-		this.gameMaze.setCell(new MazeAnnihilationWand(), x, y, z, w);
+		this.gameMaze.setCell(new AnnihilationWand(), x, y, z, w);
 	    } else if (inputLine.equals("FMW")) {
-		this.gameMaze.setCell(new MazeFinishMakingWand(), x, y, z, w);
+		this.gameMaze.setCell(new FinishMakingWand(), x, y, z, w);
 	    } else if (inputLine.equals("WMW")) {
-		this.gameMaze.setCell(new MazeWallMakingWand(), x, y, z, w);
+		this.gameMaze.setCell(new WallMakingWand(), x, y, z, w);
 	    } else if (inputLine.equals("TW")) {
-		this.gameMaze.setCell(new MazeTeleportWand(), x, y, z, w);
+		this.gameMaze.setCell(new TeleportWand(), x, y, z, w);
 	    } else if (inputLine.equals("V")) {
-		this.gameMaze.setCell(new MazeVoid(), x, y, z, w);
+		this.gameMaze.setCell(new EmptyVoid(), x, y, z, w);
 	    } else if (inputLine.equals("EW")) {
-		this.gameMaze.setCell(new MazeExplodingWall(), x, y, z, w);
+		this.gameMaze.setCell(new ExplodingWall(), x, y, z, w);
 	    } else {
 		throw new InvalidMazeException("Unknown object encountered.");
 	    }
@@ -1682,7 +1682,7 @@ public class MazeRunner {
 		this.outputFrame.addKeyListener(this.handler);
 		this.outputFrame.addWindowListener(this.handler);
 		this.outputPane.addMouseListener(this.handler);
-		this.savedMazeObject = new MazeGround();
+		this.savedMazeObject = new Ground();
 		this.showOutput();
 		this.redrawMaze();
 	    } catch (final IllegalArgumentException ia) {

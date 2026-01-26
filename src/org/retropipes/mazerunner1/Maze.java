@@ -2,7 +2,7 @@ package org.retropipes.mazerunner1;
 
 import java.io.Serializable;
 
-import org.retropipes.mazerunner1.objects.abc.MazeGenericMovableObject;
+import org.retropipes.mazerunner1.objects.abc.AbstractMovableObject;
 
 public class Maze implements Serializable {
     // Properties
@@ -112,7 +112,7 @@ public class Maze implements Serializable {
 		for (z = 0; z < this.getFloors(); z++) {
 		    this.savedLevel[x][y][z][level] = this.mazeData[x][y][z][level];
 		    if (this.mazeData[x][y][z][level].isPushable() || this.mazeData[x][y][z][level].isPullable()) {
-			final MazeGenericMovableObject pb = (MazeGenericMovableObject) this.mazeData[x][y][z][level];
+			final AbstractMovableObject pb = (AbstractMovableObject) this.mazeData[x][y][z][level];
 			this.savedObject[x][y][z][level] = pb.getSavedObject();
 		    }
 		}
@@ -127,7 +127,7 @@ public class Maze implements Serializable {
 		for (z = 0; z < this.getFloors(); z++) {
 		    this.mazeData[x][y][z][level] = this.savedLevel[x][y][z][level];
 		    if (this.savedLevel[x][y][z][level].isPushable() || this.savedLevel[x][y][z][level].isPullable()) {
-			final MazeGenericMovableObject pb = (MazeGenericMovableObject) this.savedLevel[x][y][z][level];
+			final AbstractMovableObject pb = (AbstractMovableObject) this.savedLevel[x][y][z][level];
 			pb.setSavedObject(this.savedObject[x][y][z][level]);
 			this.mazeData[x][y][z][level] = pb;
 		    }

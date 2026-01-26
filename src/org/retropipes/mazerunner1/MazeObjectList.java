@@ -1,97 +1,97 @@
 package org.retropipes.mazerunner1;
 
-import org.retropipes.mazerunner1.objects.MazeAKey;
-import org.retropipes.mazerunner1.objects.MazeALock;
-import org.retropipes.mazerunner1.objects.MazeAnnihilationWand;
-import org.retropipes.mazerunner1.objects.MazeBomb;
-import org.retropipes.mazerunner1.objects.MazeBoots;
-import org.retropipes.mazerunner1.objects.MazeCKey;
-import org.retropipes.mazerunner1.objects.MazeCLock;
-import org.retropipes.mazerunner1.objects.MazeCrackedWall;
-import org.retropipes.mazerunner1.objects.MazeDKey;
-import org.retropipes.mazerunner1.objects.MazeDLock;
-import org.retropipes.mazerunner1.objects.MazeEnergySphere;
-import org.retropipes.mazerunner1.objects.MazeExplodingWall;
-import org.retropipes.mazerunner1.objects.MazeFKey;
-import org.retropipes.mazerunner1.objects.MazeFLock;
-import org.retropipes.mazerunner1.objects.MazeFakeFinish;
-import org.retropipes.mazerunner1.objects.MazeFakeWall;
-import org.retropipes.mazerunner1.objects.MazeFinish;
-import org.retropipes.mazerunner1.objects.MazeFinishMakingWand;
-import org.retropipes.mazerunner1.objects.MazeFinishTo;
-import org.retropipes.mazerunner1.objects.MazeForceField;
-import org.retropipes.mazerunner1.objects.MazeGKey;
-import org.retropipes.mazerunner1.objects.MazeGLock;
-import org.retropipes.mazerunner1.objects.MazeGround;
-import org.retropipes.mazerunner1.objects.MazeIce;
-import org.retropipes.mazerunner1.objects.MazeInvisibleOneShotTeleporter;
-import org.retropipes.mazerunner1.objects.MazeInvisibleTeleporter;
-import org.retropipes.mazerunner1.objects.MazeInvisibleWall;
-import org.retropipes.mazerunner1.objects.MazeKKey;
-import org.retropipes.mazerunner1.objects.MazeKLock;
-import org.retropipes.mazerunner1.objects.MazeKey;
-import org.retropipes.mazerunner1.objects.MazeLKey;
-import org.retropipes.mazerunner1.objects.MazeLLock;
-import org.retropipes.mazerunner1.objects.MazeLock;
-import org.retropipes.mazerunner1.objects.MazeMKey;
-import org.retropipes.mazerunner1.objects.MazeMLock;
-import org.retropipes.mazerunner1.objects.MazeNKey;
-import org.retropipes.mazerunner1.objects.MazeNLock;
-import org.retropipes.mazerunner1.objects.MazeOneShotTeleporter;
-import org.retropipes.mazerunner1.objects.MazeOneWayEastWall;
-import org.retropipes.mazerunner1.objects.MazeOneWayNorthWall;
-import org.retropipes.mazerunner1.objects.MazeOneWaySouthWall;
-import org.retropipes.mazerunner1.objects.MazeOneWayWestWall;
-import org.retropipes.mazerunner1.objects.MazePKey;
-import org.retropipes.mazerunner1.objects.MazePLock;
-import org.retropipes.mazerunner1.objects.MazePit;
-import org.retropipes.mazerunner1.objects.MazePlayer;
-import org.retropipes.mazerunner1.objects.MazePullableBlock;
-import org.retropipes.mazerunner1.objects.MazePushableBlock;
-import org.retropipes.mazerunner1.objects.MazePushablePullableBlock;
-import org.retropipes.mazerunner1.objects.MazeRKey;
-import org.retropipes.mazerunner1.objects.MazeRLock;
-import org.retropipes.mazerunner1.objects.MazeRandomInvisibleOneShotTeleporter;
-import org.retropipes.mazerunner1.objects.MazeRandomInvisibleTeleporter;
-import org.retropipes.mazerunner1.objects.MazeRandomOneShotTeleporter;
-import org.retropipes.mazerunner1.objects.MazeRandomTeleporter;
-import org.retropipes.mazerunner1.objects.MazeStairsDown;
-import org.retropipes.mazerunner1.objects.MazeStairsUp;
-import org.retropipes.mazerunner1.objects.MazeSunkenBlock;
-import org.retropipes.mazerunner1.objects.MazeTablet;
-import org.retropipes.mazerunner1.objects.MazeTabletSlot;
-import org.retropipes.mazerunner1.objects.MazeTeleportWand;
-import org.retropipes.mazerunner1.objects.MazeTeleporter;
-import org.retropipes.mazerunner1.objects.MazeTile;
-import org.retropipes.mazerunner1.objects.MazeTwoWayTeleporter;
-import org.retropipes.mazerunner1.objects.MazeUKey;
-import org.retropipes.mazerunner1.objects.MazeULock;
-import org.retropipes.mazerunner1.objects.MazeVoid;
-import org.retropipes.mazerunner1.objects.MazeWall;
-import org.retropipes.mazerunner1.objects.MazeWallMakingWand;
-import org.retropipes.mazerunner1.objects.MazeWater;
-import org.retropipes.mazerunner1.objects.MazeZKey;
-import org.retropipes.mazerunner1.objects.MazeZLock;
+import org.retropipes.mazerunner1.objects.AKey;
+import org.retropipes.mazerunner1.objects.ALock;
+import org.retropipes.mazerunner1.objects.AnnihilationWand;
+import org.retropipes.mazerunner1.objects.Bomb;
+import org.retropipes.mazerunner1.objects.Boots;
+import org.retropipes.mazerunner1.objects.CKey;
+import org.retropipes.mazerunner1.objects.CLock;
+import org.retropipes.mazerunner1.objects.CrackedWall;
+import org.retropipes.mazerunner1.objects.DKey;
+import org.retropipes.mazerunner1.objects.DLock;
+import org.retropipes.mazerunner1.objects.EnergySphere;
+import org.retropipes.mazerunner1.objects.ExplodingWall;
+import org.retropipes.mazerunner1.objects.FKey;
+import org.retropipes.mazerunner1.objects.FLock;
+import org.retropipes.mazerunner1.objects.FakeFinish;
+import org.retropipes.mazerunner1.objects.FakeWall;
+import org.retropipes.mazerunner1.objects.Finish;
+import org.retropipes.mazerunner1.objects.FinishMakingWand;
+import org.retropipes.mazerunner1.objects.FinishTo;
+import org.retropipes.mazerunner1.objects.ForceField;
+import org.retropipes.mazerunner1.objects.GKey;
+import org.retropipes.mazerunner1.objects.GLock;
+import org.retropipes.mazerunner1.objects.Ground;
+import org.retropipes.mazerunner1.objects.Ice;
+import org.retropipes.mazerunner1.objects.InvisibleOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.InvisibleTeleporter;
+import org.retropipes.mazerunner1.objects.InvisibleWall;
+import org.retropipes.mazerunner1.objects.KKey;
+import org.retropipes.mazerunner1.objects.KLock;
+import org.retropipes.mazerunner1.objects.Key;
+import org.retropipes.mazerunner1.objects.LKey;
+import org.retropipes.mazerunner1.objects.LLock;
+import org.retropipes.mazerunner1.objects.Lock;
+import org.retropipes.mazerunner1.objects.MKey;
+import org.retropipes.mazerunner1.objects.MLock;
+import org.retropipes.mazerunner1.objects.NKey;
+import org.retropipes.mazerunner1.objects.NLock;
+import org.retropipes.mazerunner1.objects.OneShotTeleporter;
+import org.retropipes.mazerunner1.objects.OneWayEastWall;
+import org.retropipes.mazerunner1.objects.OneWayNorthWall;
+import org.retropipes.mazerunner1.objects.OneWaySouthWall;
+import org.retropipes.mazerunner1.objects.OneWayWestWall;
+import org.retropipes.mazerunner1.objects.PKey;
+import org.retropipes.mazerunner1.objects.PLock;
+import org.retropipes.mazerunner1.objects.Pit;
+import org.retropipes.mazerunner1.objects.Player;
+import org.retropipes.mazerunner1.objects.PullableBlock;
+import org.retropipes.mazerunner1.objects.PushableBlock;
+import org.retropipes.mazerunner1.objects.PushablePullableBlock;
+import org.retropipes.mazerunner1.objects.RKey;
+import org.retropipes.mazerunner1.objects.RLock;
+import org.retropipes.mazerunner1.objects.RandomInvisibleOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.RandomInvisibleTeleporter;
+import org.retropipes.mazerunner1.objects.RandomOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.RandomTeleporter;
+import org.retropipes.mazerunner1.objects.StairsDown;
+import org.retropipes.mazerunner1.objects.StairsUp;
+import org.retropipes.mazerunner1.objects.SunkenBlock;
+import org.retropipes.mazerunner1.objects.Tablet;
+import org.retropipes.mazerunner1.objects.TabletSlot;
+import org.retropipes.mazerunner1.objects.TeleportWand;
+import org.retropipes.mazerunner1.objects.Teleporter;
+import org.retropipes.mazerunner1.objects.Tile;
+import org.retropipes.mazerunner1.objects.TwoWayTeleporter;
+import org.retropipes.mazerunner1.objects.UKey;
+import org.retropipes.mazerunner1.objects.ULock;
+import org.retropipes.mazerunner1.objects.EmptyVoid;
+import org.retropipes.mazerunner1.objects.Wall;
+import org.retropipes.mazerunner1.objects.WallMakingWand;
+import org.retropipes.mazerunner1.objects.Water;
+import org.retropipes.mazerunner1.objects.ZKey;
+import org.retropipes.mazerunner1.objects.ZLock;
 
 public class MazeObjectList {
     // fields
-    private final MazeObject[] allObjects = { new MazeGround(), new MazeWall(), new MazePlayer(), new MazeFinish(),
-	    new MazeInvisibleWall(), new MazeFakeWall(), new MazeKey(), new MazeLock(), new MazeTablet(),
-	    new MazeTabletSlot(), new MazeFakeFinish(), new MazeCrackedWall(), new MazeBomb(), new MazeTeleporter(),
-	    new MazeInvisibleTeleporter(), new MazeAKey(), new MazeALock(), new MazeCKey(), new MazeCLock(),
-	    new MazeDKey(), new MazeDLock(), new MazeFKey(), new MazeFLock(), new MazeGKey(), new MazeGLock(),
-	    new MazeKKey(), new MazeKLock(), new MazeLKey(), new MazeLLock(), new MazeMKey(), new MazeMLock(),
-	    new MazeNKey(), new MazeNLock(), new MazePKey(), new MazePLock(), new MazeRKey(), new MazeRLock(),
-	    new MazeUKey(), new MazeULock(), new MazeZKey(), new MazeZLock(), new MazeRandomTeleporter(),
-	    new MazeRandomInvisibleTeleporter(), new MazeRandomOneShotTeleporter(),
-	    new MazeRandomInvisibleOneShotTeleporter(), new MazeOneShotTeleporter(),
-	    new MazeInvisibleOneShotTeleporter(), new MazeOneWayEastWall(), new MazeOneWayNorthWall(),
-	    new MazeOneWaySouthWall(), new MazeOneWayWestWall(), new MazeStairsUp(), new MazeStairsDown(),
-	    new MazeTwoWayTeleporter(), new MazePit(), new MazeTile(), new MazePushableBlock(), new MazePullableBlock(),
-	    new MazePushablePullableBlock(), new MazeIce(), new MazeFinishTo(), new MazeBoots(), new MazeWater(),
-	    new MazeSunkenBlock(), new MazeEnergySphere(), new MazeForceField(), new MazeAnnihilationWand(),
-	    new MazeFinishMakingWand(), new MazeWallMakingWand(), new MazeTeleportWand(), new MazeVoid(),
-	    new MazeExplodingWall() };
+    private final MazeObject[] allObjects = { new Ground(), new Wall(), new Player(), new Finish(),
+	    new InvisibleWall(), new FakeWall(), new Key(), new Lock(), new Tablet(),
+	    new TabletSlot(), new FakeFinish(), new CrackedWall(), new Bomb(), new Teleporter(),
+	    new InvisibleTeleporter(), new AKey(), new ALock(), new CKey(), new CLock(),
+	    new DKey(), new DLock(), new FKey(), new FLock(), new GKey(), new GLock(),
+	    new KKey(), new KLock(), new LKey(), new LLock(), new MKey(), new MLock(),
+	    new NKey(), new NLock(), new PKey(), new PLock(), new RKey(), new RLock(),
+	    new UKey(), new ULock(), new ZKey(), new ZLock(), new RandomTeleporter(),
+	    new RandomInvisibleTeleporter(), new RandomOneShotTeleporter(),
+	    new RandomInvisibleOneShotTeleporter(), new OneShotTeleporter(),
+	    new InvisibleOneShotTeleporter(), new OneWayEastWall(), new OneWayNorthWall(),
+	    new OneWaySouthWall(), new OneWayWestWall(), new StairsUp(), new StairsDown(),
+	    new TwoWayTeleporter(), new Pit(), new Tile(), new PushableBlock(), new PullableBlock(),
+	    new PushablePullableBlock(), new Ice(), new FinishTo(), new Boots(), new Water(),
+	    new SunkenBlock(), new EnergySphere(), new ForceField(), new AnnihilationWand(),
+	    new FinishMakingWand(), new WallMakingWand(), new TeleportWand(), new EmptyVoid(),
+	    new ExplodingWall() };
 
     public MazeObject[] getAllObjects() {
 	return this.allObjects;
