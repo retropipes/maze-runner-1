@@ -1,4 +1,4 @@
-package org.retropipes.mazerunner1;
+package org.retropipes.mazerunner1.objects.base;
 
 import java.io.Serializable;
 

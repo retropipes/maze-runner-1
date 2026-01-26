@@ -1,6 +1,6 @@
 package org.retropipes.mazerunner1.objects.abc;
 
-import org.retropipes.mazerunner1.Inventory;
+import org.retropipes.mazerunner1.objects.base.Inventory;
 
 public abstract class AbstractField extends AbstractInfiniteLock {
     // Serialization

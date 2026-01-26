@@ -3,9 +3,9 @@ package org.retropipes.mazerunner1.objects;
 import javax.swing.ImageIcon;
 
 import org.retropipes.mazerunner1.ImageSetManager;
-import org.retropipes.mazerunner1.MazeObject;
 import org.retropipes.mazerunner1.MazeRunner;
 import org.retropipes.mazerunner1.objects.abc.AbstractWall;
+import org.retropipes.mazerunner1.objects.base.MazeObject;
 
 public class EmptyVoid extends AbstractWall {
     // Properties - used only for gameRenderHook

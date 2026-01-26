@@ -1,8 +1,8 @@
 package org.retropipes.mazerunner1.objects;
 
-import org.retropipes.mazerunner1.MazeObject;
 import org.retropipes.mazerunner1.MazeRunner;
 import org.retropipes.mazerunner1.objects.abc.AbstractWand;
+import org.retropipes.mazerunner1.objects.base.MazeObject;
 
 public class TeleportWand extends AbstractWand {
     // Serialization

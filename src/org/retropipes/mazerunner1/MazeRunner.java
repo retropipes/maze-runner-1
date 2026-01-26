@@ -30,6 +30,9 @@ import javax.swing.SwingConstants;
 import javax.swing.UIManager;
 import javax.swing.WindowConstants;
 
+import org.retropipes.mazerunner1.maze.Maze;
+import org.retropipes.mazerunner1.maze.MazeFilter;
+import org.retropipes.mazerunner1.maze.SavedGameFilter;
 import org.retropipes.mazerunner1.objects.AKey;
 import org.retropipes.mazerunner1.objects.ALock;
 import org.retropipes.mazerunner1.objects.AnnihilationWand;
@@ -103,6 +106,8 @@ import org.retropipes.mazerunner1.objects.Water;
 import org.retropipes.mazerunner1.objects.ZKey;
 import org.retropipes.mazerunner1.objects.ZLock;
 import org.retropipes.mazerunner1.objects.abc.AbstractMovableObject;
+import org.retropipes.mazerunner1.objects.base.Inventory;
+import org.retropipes.mazerunner1.objects.base.MazeObject;
 
 public class MazeRunner {
     // Static fields

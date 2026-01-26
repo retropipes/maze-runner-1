@@ -1,8 +1,11 @@
-package org.retropipes.mazerunner1;
+package org.retropipes.mazerunner1.objects.base;
 
 import java.io.Serializable;
 
 import javax.swing.ImageIcon;
+
+import org.retropipes.mazerunner1.ImageSetManager;
+import org.retropipes.mazerunner1.MazeRunner;
 
 public abstract class MazeObject implements Scriptable, Serializable {
     // Properties

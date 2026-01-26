@@ -1,4 +1,4 @@
-package org.retropipes.mazerunner1;
+package org.retropipes.mazerunner1.objects.base;
 
 import org.retropipes.mazerunner1.objects.AKey;
 import org.retropipes.mazerunner1.objects.ALock;

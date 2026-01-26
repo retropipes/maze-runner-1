@@ -1,8 +1,8 @@
 package org.retropipes.mazerunner1.objects;
 
 import org.retropipes.mazerunner1.MazeMaker;
-import org.retropipes.mazerunner1.MazeObject;
 import org.retropipes.mazerunner1.objects.abc.AbstractTeleporter;
+import org.retropipes.mazerunner1.objects.base.MazeObject;
 
 public class Teleporter extends AbstractTeleporter {
     // Serialization

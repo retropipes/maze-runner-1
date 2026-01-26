@@ -1,8 +1,9 @@
-package org.retropipes.mazerunner1;
+package org.retropipes.mazerunner1.maze;
 
 import java.io.Serializable;
 
 import org.retropipes.mazerunner1.objects.abc.AbstractMovableObject;
+import org.retropipes.mazerunner1.objects.base.MazeObject;
 
 public class Maze implements Serializable {
     // Properties

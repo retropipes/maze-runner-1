@@ -1,10 +1,10 @@
 package org.retropipes.mazerunner1.objects;
 
-import org.retropipes.mazerunner1.Inventory;
-import org.retropipes.mazerunner1.MazeObject;
 import org.retropipes.mazerunner1.MazeRunner;
 import org.retropipes.mazerunner1.Messager;
 import org.retropipes.mazerunner1.objects.abc.AbstractWall;
+import org.retropipes.mazerunner1.objects.base.Inventory;
+import org.retropipes.mazerunner1.objects.base.MazeObject;
 
 public class ExplodingWall extends AbstractWall {
     // Serialization

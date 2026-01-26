@@ -1,4 +1,4 @@
-package org.retropipes.mazerunner1;
+package org.retropipes.mazerunner1.objects.base;
 
 public interface Scriptable {
     void preMoveAction(Inventory inv);

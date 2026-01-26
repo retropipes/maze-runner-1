@@ -1,18 +1,18 @@
-package org.retropipes.mazerunner1;
+package org.retropipes.mazerunner1.maze;
 
 import java.io.File;
 
 import javax.swing.filechooser.FileFilter;
 
-public class MazeFilter extends FileFilter {
+public class SavedGameFilter extends FileFilter {
     @Override
     public boolean accept(final File f) {
 	if (f.isDirectory()) {
 	    return true;
 	}
-	final String extension = MazeFilter.getExtension(f);
+	final String extension = SavedGameFilter.getExtension(f);
 	if (extension != null) {
-	    if (extension.equals("mrm")) {
+	    if (extension.equals("mrv")) {
 		return true;
 	    } else {
 		return false;
@@ -23,7 +23,7 @@ public class MazeFilter extends FileFilter {
 
     @Override
     public String getDescription() {
-	return "Mazes";
+	return "Saved Games";
     }
 
     private static String getExtension(final File f) {

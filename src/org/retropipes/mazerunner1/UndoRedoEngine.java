@@ -1,5 +1,7 @@
 package org.retropipes.mazerunner1;
 
+import org.retropipes.mazerunner1.objects.base.MazeObject;
+
 public class UndoRedoEngine {
     // Fields
     private final LinkStack undoHistory;
