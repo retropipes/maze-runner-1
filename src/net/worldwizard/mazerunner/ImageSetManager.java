@@ -1,17 +1,19 @@
 package net.worldwizard.mazerunner;
 
+import java.util.regex.Pattern;
+
 import javax.swing.ImageIcon;
 
 public class ImageSetManager {
+    public static Pattern find = Pattern.compile("([A-Za-z])([A-Z])");
+
     public static ImageIcon getImage(final String set, final int size, final String filename) {
-	final ImageIcon icon = new ImageIcon(
-		"./ImageSets" + "/" + set + "/" + filename + ".image/image" + String.valueOf(size) + ".png");
-	return icon;
+	return new ImageIcon(ImageSetManager.class.getResource("/image/set/" + set.toLowerCase() + "/"
+		+ find.matcher(filename).replaceAll("$1-$2") + "/" + String.valueOf(size) + ".png"));
     }
 
     public static ImageIcon getLogo() {
-	final ImageIcon icon = new ImageIcon("./ImageSets/Logo.png");
-	return icon;
+	return new ImageIcon(ImageSetManager.class.getResource("/image/ui/logo.png"));
     }
 
     public static String getDefaultSet() {
