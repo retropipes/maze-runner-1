@@ -16,8 +16,8 @@ public class InvisibleOneShotTeleporter extends AbstractInvisibleTeleporter {
 	super("Ground", "InvisibleOneShotTeleporter", 0, 0, 0, 0);
     }
 
-    public InvisibleOneShotTeleporter(final int destinationRow, final int destinationColumn,
-	    final int destinationFloor, final int destinationLevel) {
+    public InvisibleOneShotTeleporter(final int destinationRow, final int destinationColumn, final int destinationFloor,
+	    final int destinationLevel) {
 	super("Ground", "InvisibleOneShotTeleporter", destinationRow, destinationColumn, destinationFloor,
 		destinationLevel);
     }

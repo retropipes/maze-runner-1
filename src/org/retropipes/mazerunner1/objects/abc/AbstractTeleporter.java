@@ -14,9 +14,8 @@ public abstract class AbstractTeleporter extends MazeObject {
     private static final long serialVersionUID = 7555L;
 
     // Constructors
-    protected AbstractTeleporter(final String gameAppearance, final String editorAppearance,
-	    final int destinationRow, final int destinationColumn, final int destinationFloor,
-	    final int destinationLevel) {
+    protected AbstractTeleporter(final String gameAppearance, final String editorAppearance, final int destinationRow,
+	    final int destinationColumn, final int destinationFloor, final int destinationLevel) {
 	super(false, gameAppearance, editorAppearance);
 	this.destRow = destinationRow;
 	this.destCol = destinationColumn;

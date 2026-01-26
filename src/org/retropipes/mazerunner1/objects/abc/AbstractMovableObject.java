@@ -11,8 +11,8 @@ public abstract class AbstractMovableObject extends MazeObject {
     private static final long serialVersionUID = 7588L;
 
     // Constructors
-    protected AbstractMovableObject(final String gameAppearance, final String editorAppearance,
-	    final boolean pushable, final boolean pullable, final MazeObject startingSavedObject) {
+    protected AbstractMovableObject(final String gameAppearance, final String editorAppearance, final boolean pushable,
+	    final boolean pullable, final MazeObject startingSavedObject) {
 	super(true, true, true, true, true, true, true, true, gameAppearance, editorAppearance, pushable, false, false,
 		pullable, false, false, true, false, 0);
 	this.savedObject = startingSavedObject;

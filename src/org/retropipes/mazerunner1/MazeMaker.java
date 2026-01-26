@@ -247,16 +247,16 @@ public class MazeMaker {
 	switch (type) {
 	case STAIRS_UP:
 	    try {
-		MazeMaker.app.getMaze().setCell(new StairsDown(), MazeMaker.editorLocationX,
-			MazeMaker.editorLocationY, MazeMaker.editorLocationZ + 1, MazeMaker.editorLocationW);
+		MazeMaker.app.getMaze().setCell(new StairsDown(), MazeMaker.editorLocationX, MazeMaker.editorLocationY,
+			MazeMaker.editorLocationZ + 1, MazeMaker.editorLocationW);
 	    } catch (final ArrayIndexOutOfBoundsException e) {
 		// Do nothing
 	    }
 	    break;
 	case STAIRS_DOWN:
 	    try {
-		MazeMaker.app.getMaze().setCell(new StairsUp(), MazeMaker.editorLocationX,
-			MazeMaker.editorLocationY, MazeMaker.editorLocationZ - 1, MazeMaker.editorLocationW);
+		MazeMaker.app.getMaze().setCell(new StairsUp(), MazeMaker.editorLocationX, MazeMaker.editorLocationY,
+			MazeMaker.editorLocationZ - 1, MazeMaker.editorLocationW);
 	    } catch (final ArrayIndexOutOfBoundsException e) {
 		// Do nothing
 	    }
@@ -270,16 +270,16 @@ public class MazeMaker {
 	switch (type) {
 	case STAIRS_UP:
 	    try {
-		MazeMaker.app.getMaze().setCell(new StairsDown(), MazeMaker.editorLocationX,
-			MazeMaker.editorLocationY, z + 1, w);
+		MazeMaker.app.getMaze().setCell(new StairsDown(), MazeMaker.editorLocationX, MazeMaker.editorLocationY,
+			z + 1, w);
 	    } catch (final ArrayIndexOutOfBoundsException e) {
 		// Do nothing
 	    }
 	    break;
 	case STAIRS_DOWN:
 	    try {
-		MazeMaker.app.getMaze().setCell(new StairsUp(), MazeMaker.editorLocationX,
-			MazeMaker.editorLocationY, z - 1, w);
+		MazeMaker.app.getMaze().setCell(new StairsUp(), MazeMaker.editorLocationX, MazeMaker.editorLocationY,
+			z - 1, w);
 	    } catch (final ArrayIndexOutOfBoundsException e) {
 		// Do nothing
 	    }
@@ -497,9 +497,8 @@ public class MazeMaker {
 		    MazeMaker.editorCameFromW);
 	    break;
 	case TELEPORTER_TYPE_TWOWAY:
-	    MazeMaker.app.getMaze().setCell(new TwoWayTeleporter(destX, destY, destZ, destW),
-		    MazeMaker.editorLocationX, MazeMaker.editorLocationY, MazeMaker.editorCameFromZ,
-		    MazeMaker.editorCameFromW);
+	    MazeMaker.app.getMaze().setCell(new TwoWayTeleporter(destX, destY, destZ, destW), MazeMaker.editorLocationX,
+		    MazeMaker.editorLocationY, MazeMaker.editorCameFromZ, MazeMaker.editorCameFromW);
 	    MazeMaker.pairTwoWayTeleporter(destX, destY, destZ, destW);
 	    break;
 	default:
@@ -757,8 +756,7 @@ public class MazeMaker {
 	MazeMaker.editorCameFromW = w;
 	if (x != -1 && y != -1 && z != -1 && w != -1) {
 	    final MazeObject oldObj = MazeMaker.app.getMazeObject(x, y, z, w);
-	    if (!obj.getName().equals(new StairsUp().getName())
-		    && !obj.getName().equals(new StairsDown().getName())) {
+	    if (!obj.getName().equals(new StairsUp().getName()) && !obj.getName().equals(new StairsDown().getName())) {
 		if (obj.getName().equals(new TwoWayTeleporter().getName())) {
 		    MazeMaker.app.getMaze().setCell(obj, x, y, z, w);
 		    MazeMaker.reverseCheckTwoWayTeleporterPair(z, w);
@@ -792,8 +790,7 @@ public class MazeMaker {
 	MazeMaker.editorCameFromW = w;
 	if (x != -1 && y != -1 && z != -1 && w != -1) {
 	    final MazeObject oldObj = MazeMaker.app.getMazeObject(x, y, z, w);
-	    if (!obj.getName().equals(new StairsUp().getName())
-		    && !obj.getName().equals(new StairsDown().getName())) {
+	    if (!obj.getName().equals(new StairsUp().getName()) && !obj.getName().equals(new StairsDown().getName())) {
 		if (obj.getName().equals(new TwoWayTeleporter().getName())) {
 		    MazeMaker.app.getMaze().setCell(obj, x, y, z, w);
 		    MazeMaker.reverseCheckTwoWayTeleporterPair(z, w);

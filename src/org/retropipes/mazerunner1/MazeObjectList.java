@@ -75,22 +75,18 @@ import org.retropipes.mazerunner1.objects.ZLock;
 
 public class MazeObjectList {
     // fields
-    private final MazeObject[] allObjects = { new Ground(), new Wall(), new Player(), new Finish(),
-	    new InvisibleWall(), new FakeWall(), new Key(), new Lock(), new Tablet(),
-	    new TabletSlot(), new FakeFinish(), new CrackedWall(), new Bomb(), new Teleporter(),
-	    new InvisibleTeleporter(), new AKey(), new ALock(), new CKey(), new CLock(),
-	    new DKey(), new DLock(), new FKey(), new FLock(), new GKey(), new GLock(),
-	    new KKey(), new KLock(), new LKey(), new LLock(), new MKey(), new MLock(),
-	    new NKey(), new NLock(), new PKey(), new PLock(), new RKey(), new RLock(),
-	    new UKey(), new ULock(), new ZKey(), new ZLock(), new RandomTeleporter(),
-	    new RandomInvisibleTeleporter(), new RandomOneShotTeleporter(),
-	    new RandomInvisibleOneShotTeleporter(), new OneShotTeleporter(),
-	    new InvisibleOneShotTeleporter(), new OneWayEastWall(), new OneWayNorthWall(),
-	    new OneWaySouthWall(), new OneWayWestWall(), new StairsUp(), new StairsDown(),
-	    new TwoWayTeleporter(), new Pit(), new Tile(), new PushableBlock(), new PullableBlock(),
-	    new PushablePullableBlock(), new Ice(), new FinishTo(), new Boots(), new Water(),
-	    new SunkenBlock(), new EnergySphere(), new ForceField(), new AnnihilationWand(),
-	    new FinishMakingWand(), new WallMakingWand(), new TeleportWand(), new EmptyVoid(),
+    private final MazeObject[] allObjects = { new Ground(), new Wall(), new Player(), new Finish(), new InvisibleWall(),
+	    new FakeWall(), new Key(), new Lock(), new Tablet(), new TabletSlot(), new FakeFinish(), new CrackedWall(),
+	    new Bomb(), new Teleporter(), new InvisibleTeleporter(), new AKey(), new ALock(), new CKey(), new CLock(),
+	    new DKey(), new DLock(), new FKey(), new FLock(), new GKey(), new GLock(), new KKey(), new KLock(),
+	    new LKey(), new LLock(), new MKey(), new MLock(), new NKey(), new NLock(), new PKey(), new PLock(),
+	    new RKey(), new RLock(), new UKey(), new ULock(), new ZKey(), new ZLock(), new RandomTeleporter(),
+	    new RandomInvisibleTeleporter(), new RandomOneShotTeleporter(), new RandomInvisibleOneShotTeleporter(),
+	    new OneShotTeleporter(), new InvisibleOneShotTeleporter(), new OneWayEastWall(), new OneWayNorthWall(),
+	    new OneWaySouthWall(), new OneWayWestWall(), new StairsUp(), new StairsDown(), new TwoWayTeleporter(),
+	    new Pit(), new Tile(), new PushableBlock(), new PullableBlock(), new PushablePullableBlock(), new Ice(),
+	    new FinishTo(), new Boots(), new Water(), new SunkenBlock(), new EnergySphere(), new ForceField(),
+	    new AnnihilationWand(), new FinishMakingWand(), new WallMakingWand(), new TeleportWand(), new EmptyVoid(),
 	    new ExplodingWall() };
 
     public MazeObject[] getAllObjects() {

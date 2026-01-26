@@ -483,8 +483,8 @@ public class MazeRunner {
 		this.upperLeftViewingWindowY = this.oldUpperLeftViewingWindowY;
 		this.lowerRightViewingWindowX = this.oldLowerRightViewingWindowX;
 		this.lowerRightViewingWindowY = this.oldLowerRightViewingWindowY;
-		this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY,
-			this.playerLocationZ, this.playerLocationW);
+		this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY, this.playerLocationZ,
+			this.playerLocationW);
 		if (this.getMessageEnabled(MazeRunner.MESSAGE_CANNOT_GO_OUTSIDE_MAZE)) {
 		    Messager.showMessage("Can't go outside the maze");
 		}
@@ -520,8 +520,7 @@ public class MazeRunner {
     }
 
     public void updatePushedIntoPositionAbsolute(final int x, final int y, final int z, final int w, final int x2,
-	    final int y2, final int z2, final int w2, final AbstractMovableObject pushedInto,
-	    final MazeObject source) {
+	    final int y2, final int z2, final int w2, final AbstractMovableObject pushedInto, final MazeObject source) {
 	try {
 	    if (!this.gameMaze.getCell(x, y, z, w).isConditionallySolid(this.inv)) {
 		pushedInto.setSavedObject(this.gameMaze.getCell(x, y, z, w));
@@ -565,8 +564,8 @@ public class MazeRunner {
 		this.lowerRightViewingWindowY = this.playerLocationX + (MazeRunner.VIEWING_WINDOW_SIZE_Y - 1) / 2;
 		this.savedMazeObject = this.gameMaze.getCell(this.playerLocationX, this.playerLocationY,
 			this.playerLocationZ, this.playerLocationW);
-		this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY,
-			this.playerLocationZ, this.playerLocationW);
+		this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY, this.playerLocationZ,
+			this.playerLocationW);
 		this.redrawMaze();
 		this.isDirty = true;
 		this.savedMazeObject.postMoveAction(false, x, y, this.inv);
@@ -618,8 +617,8 @@ public class MazeRunner {
 		this.lowerRightViewingWindowY = this.playerLocationX + (MazeRunner.VIEWING_WINDOW_SIZE_Y - 1) / 2;
 		this.savedMazeObject = this.gameMaze.getCell(this.playerLocationX, this.playerLocationY,
 			this.playerLocationZ, this.playerLocationW);
-		this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY,
-			this.playerLocationZ, this.playerLocationW);
+		this.gameMaze.setCell(new Player(), this.playerLocationX, this.playerLocationY, this.playerLocationZ,
+			this.playerLocationW);
 		this.redrawMaze();
 		this.isDirty = true;
 	    }

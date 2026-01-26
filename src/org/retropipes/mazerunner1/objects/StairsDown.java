@@ -20,8 +20,7 @@ public class StairsDown extends AbstractTeleporter {
     }
 
     // For derived classes only
-    protected StairsDown(final String gameAppearance, final String editorAppearance,
-	    final boolean doesAcceptPushInto) {
+    protected StairsDown(final String gameAppearance, final String editorAppearance, final boolean doesAcceptPushInto) {
 	super(gameAppearance, editorAppearance, doesAcceptPushInto);
     }
 
