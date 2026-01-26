@@ -2,6 +2,8 @@ package org.retropipes.mazerunner1;
 
 import java.io.Serializable;
 
+import org.retropipes.mazerunner1.objects.abc.MazeGenericMovableObject;
+
 public class Maze implements Serializable {
     // Properties
     private final MazeObject[][][][] mazeData;

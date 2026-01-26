@@ -18,6 +18,21 @@ import javax.swing.JScrollBar;
 import javax.swing.SwingConstants;
 import javax.swing.WindowConstants;
 
+import org.retropipes.mazerunner1.objects.MazeFinishTo;
+import org.retropipes.mazerunner1.objects.MazeGround;
+import org.retropipes.mazerunner1.objects.MazeInvisibleOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.MazeInvisibleTeleporter;
+import org.retropipes.mazerunner1.objects.MazeOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.MazeRandomInvisibleOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.MazeRandomInvisibleTeleporter;
+import org.retropipes.mazerunner1.objects.MazeRandomOneShotTeleporter;
+import org.retropipes.mazerunner1.objects.MazeRandomTeleporter;
+import org.retropipes.mazerunner1.objects.MazeStairsDown;
+import org.retropipes.mazerunner1.objects.MazeStairsUp;
+import org.retropipes.mazerunner1.objects.MazeTeleporter;
+import org.retropipes.mazerunner1.objects.MazeTeleporterEventHandler;
+import org.retropipes.mazerunner1.objects.MazeTwoWayTeleporter;
+
 public class MazeMaker {
     // Declarations
     private static JFrame outputFrame;
